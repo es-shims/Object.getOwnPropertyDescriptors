@@ -1,0 +1,71 @@
+{
+	"name": "object.getownpropertydescriptors",
+	"version": "0.0.0",
+	"author": "Jordan Harband",
+	"description": "ES7 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run lint && npm run test:shimmed && npm run test:module && npm run security",
+		"test:shimmed": "node test/shimmed.js",
+		"test:module": "node test/index.js",
+		"coverage": "covert test/*.js",
+		"coverage:quiet": "covert test/*.js --quiet",
+		"lint": "npm run jscs && npm run eslint",
+		"jscs": "jscs test/*.js *.js",
+		"eslint": "eslint test/*.js *.js",
+		"eccheck": "editorconfig-tools check *.js **/*.js > /dev/null",
+		"security": "nsp package"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ljharb/object.getownpropertydescriptors.git"
+	},
+	"keywords": [
+		"Object.getOwnPropertyDescriptors",
+		"descriptor",
+		"property descriptor",
+		"ES7",
+		"shim",
+		"polyfill",
+		"getOwnPropertyDescriptor"
+	],
+	"dependencies": {
+		"define-properties": "^1.0.1",
+		"es-abstract": "^1.1.0"
+	},
+	"devDependencies": {
+		"tape": "^3.5.0",
+		"covert": "^1.0.1",
+		"jscs": "^1.11.3",
+		"editorconfig-tools": "^0.0.1",
+		"nsp": "^1.0.0",
+		"eslint": "^0.14.1",
+		"semver": "^4.3.0"
+	},
+	"testling": {
+		"files": [
+			"test/index.js",
+			"test/shimmed.js"
+		],
+		"browsers": [
+			"iexplore/9.0..latest",
+			"firefox/4.0..6.0",
+			"firefox/15.0..latest",
+			"firefox/nightly",
+			"chrome/5.0..10.0",
+			"chrome/20.0..latest",
+			"chrome/canary",
+			"opera/12.0..latest",
+			"opera/next",
+			"safari/5.0..latest",
+			"ipad/6.0..latest",
+			"iphone/6.0..latest",
+			"android-browser/4.2"
+		]
+	},
+	"engines": {
+		"node": ">= 0.8"
+	}
+}
+
