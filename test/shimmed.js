@@ -20,12 +20,14 @@ test('shimmed', function (t) {
 
 	var supportsStrictMode = (function () {
 		'use strict';
+
 		var fn = function () { return this === null; };
 		return fn.call(null);
 	}());
 
 	t.test('bad object/this value', { skip: !supportsStrictMode }, function (st) {
 		'use strict';
+
 		st.throws(function () { return getDescriptors(undefined, 'a'); }, TypeError, 'undefined is not an object');
 		st.throws(function () { return getDescriptors(null, 'a'); }, TypeError, 'null is not an object');
 		st.end();
