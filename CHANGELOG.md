@@ -1,3 +1,10 @@
+1.0.3 / 2015-06-28
+=================
+  * Increase robustness by caching `Array#{concat, reduce}`
+  * [Deps] Update `define_properties`
+  * [Dev Deps] Update `eslint`, `semver`, `nsp`
+  * [Tests] Test up to `io.js` `v2.3`
+
 1.0.2 / 2015-05-23
 =================
   * Update `es-abstract`, `tape`, `eslint`, `jscs`, `semver`, `covert`

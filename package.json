@@ -1,6 +1,6 @@
 {
 	"name": "object.getownpropertydescriptors",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": "Jordan Harband",
 	"description": "ES7 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.",
 	"license": "MIT",
