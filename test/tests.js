@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function (getDescriptors, t) {
 	var enumDescriptor = {
 		enumerable: false,

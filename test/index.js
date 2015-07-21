@@ -1,3 +1,5 @@
+'use strict';
+
 var getDescriptors = require('../');
 var test = require('tape');
 
