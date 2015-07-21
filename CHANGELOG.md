@@ -1,3 +1,8 @@
+1.0.4 / 2015-07-20
+=================
+  * [Tests] Test on `io.js` `v2.4`
+  * [Deps, Dev Deps] Update `define-properties`, `tape`, `eslint`, `semver`
+
 1.0.3 / 2015-06-28
 =================
   * Increase robustness by caching `Array#{concat, reduce}`
