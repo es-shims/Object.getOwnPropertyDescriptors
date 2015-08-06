@@ -4,8 +4,9 @@
 	"extends": "@ljharb",
 
 	"rules": {
+		"id-length": [2, { "min": 1, "max": 30 }],
 		"max-nested-callbacks": [2, 3],
 		"new-cap": [2, { "capIsNewExceptions": ["IsCallable", "RequireObjectCoercible", "ToObject"] }],
-		"no-useless-call": [1]
+		"no-invalid-this": [1]
 	}
 }
