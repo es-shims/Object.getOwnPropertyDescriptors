@@ -2,16 +2,16 @@
 
 module.exports = function (getDescriptors, t) {
 	var enumDescriptor = {
-		enumerable: false,
-		writable: false,
 		configurable: true,
-		value: true
+		enumerable: false,
+		value: true,
+		writable: false
 	};
 	var writableDescriptor = {
-		enumerable: true,
-		writable: true,
 		configurable: true,
-		value: 42
+		enumerable: true,
+		value: 42,
+		writable: true
 	};
 
 	t.test('gets all expected non-Symbol descriptors', function (st) {
@@ -22,13 +22,13 @@ module.exports = function (getDescriptors, t) {
 		var descriptors = getDescriptors(obj);
 
 		st.deepEqual(descriptors, {
-			normal: {
-				enumerable: true,
-				writable: true,
-				configurable: true,
-				value: Infinity
-			},
 			enumerable: enumDescriptor,
+			normal: {
+				configurable: true,
+				enumerable: true,
+				value: Infinity,
+				writable: true
+			},
 			writable: writableDescriptor
 		});
 		st.end();
@@ -38,10 +38,10 @@ module.exports = function (getDescriptors, t) {
 	t.test('gets Symbol descriptors too', { skip: !supportsSymbols }, function (st) {
 		var symbol = Symbol();
 		var symDescriptor = {
-			enumerable: true,
-			writable: true,
 			configurable: false,
-			value: [symbol]
+			enumerable: true,
+			value: [symbol],
+			writable: true
 		};
 		var obj = { normal: Infinity };
 		Object.defineProperty(obj, 'enumerable', enumDescriptor);
@@ -51,15 +51,15 @@ module.exports = function (getDescriptors, t) {
 		var descriptors = getDescriptors(obj);
 
 		st.deepEqual(descriptors, {
-			normal: {
-				enumerable: true,
-				writable: true,
-				configurable: true,
-				value: Infinity
-			},
 			enumerable: enumDescriptor,
-			writable: writableDescriptor,
-			symbol: symDescriptor
+			normal: {
+				configurable: true,
+				enumerable: true,
+				value: Infinity,
+				writable: true
+			},
+			symbol: symDescriptor,
+			writable: writableDescriptor
 		});
 		st.end();
 	});
