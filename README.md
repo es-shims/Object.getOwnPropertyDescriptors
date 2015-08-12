@@ -83,7 +83,7 @@ assert.deepEqual(shimmedDescriptors(obj), getDescriptors(obj));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.org/package/object.getownpropertydescriptors
-[npm-version-svg]: http://vb.teelaun.ch/ljharb/object.getownpropertydescriptors.svg
+[npm-version-svg]: http://versionbadg.es/ljharb/object.getownpropertydescriptors.svg
 [travis-svg]: https://travis-ci.org/ljharb/object.getownpropertydescriptors.svg
 [travis-url]: https://travis-ci.org/ljharb/object.getownpropertydescriptors
 [deps-svg]: https://david-dm.org/ljharb/object.getownpropertydescriptors.svg
