@@ -34,8 +34,7 @@
 	],
 	"dependencies": {
 		"define-properties": "^1.1.2",
-		"es-abstract": "^1.5.0",
-		"@es-shims/api": "^1.0.0"
+		"es-abstract": "^1.5.0"
 	},
 	"devDependencies": {
 		"tape": "^4.4.0",
@@ -46,7 +45,8 @@
 		"eslint": "^1.10.3",
 		"@ljharb/eslint-config": "^1.6.1",
 		"semver": "^5.1.0",
-		"replace": "^0.3.0"
+		"replace": "^0.3.0",
+		"@es-shims/api": "^1.0.0"
 	},
 	"testling": {
 		"files": [
