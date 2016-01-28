@@ -1,3 +1,12 @@
+2.0.0 / 2016-01-27
+=================
+  * [Breaking] implement the es-shims API
+  * [Deps] update `define-properties`, `es-abstract`
+  * [Dev Deps] update `tape`, `jscs`, `nsp`, `eslint`, `@ljharb/eslint-config`, `semver`
+  * [Tests] fix npm upgrades in older nodes
+  * [Tests] up to `node` `v5.5`
+  * [Docs] Switch from vb.teelaun.ch to versionbadg.es for the npm version badge SVG
+
 1.0.4 / 2015-07-20
 =================
   * [Tests] Test on `io.js` `v2.4`
