@@ -1,3 +1,7 @@
+2.0.1 / 2016-01-27
+=================
+  * [Deps] move `@es-shims/api` to dev deps
+
 2.0.0 / 2016-01-27
 =================
   * [Breaking] implement the es-shims API
