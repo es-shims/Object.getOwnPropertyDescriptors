@@ -2,6 +2,7 @@
 
 var ES = require('es-abstract/es7');
 
+var defineProperty = Object.defineProperty;
 var getDescriptor = Object.getOwnPropertyDescriptor;
 var getOwnNames = Object.getOwnPropertyNames;
 var getSymbols = Object.getOwnPropertySymbols;
@@ -19,7 +20,9 @@ module.exports = function getOwnPropertyDescriptors(value) {
 
 	var O = ES.ToObject(value);
 	return reduce(getAll(O), function (acc, key) {
-		acc[key] = getDescriptor(O, key);
+	        var desc = getDescriptor(O, key);
+	        if (key in acc) defineProperty(acc, key, desc);
+		else acc[key] = desc;
 		return acc;
 	}, {});
 };
