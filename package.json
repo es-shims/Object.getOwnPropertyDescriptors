@@ -1,6 +1,6 @@
 {
 	"name": "object.getownpropertydescriptors",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"author": "Jordan Harband",
 	"description": "ECMAScript spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.",
 	"license": "MIT",
@@ -30,7 +30,7 @@
 		"shim",
 		"polyfill",
 		"getOwnPropertyDescriptor",
-        "es-shim API"
+		"es-shim API"
 	],
 	"dependencies": {
 		"define-properties": "^1.1.2",

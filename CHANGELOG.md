@@ -1,3 +1,7 @@
+2.0.2 / 2016-01-27
+=================
+  * [Fix] ensure that `Object.getOwnPropertyDescriptors` does not fail when `Object.prototype` has a poisoned setter (#1, #2)
+
 2.0.1 / 2016-01-27
 =================
   * [Deps] move `@es-shims/api` to dev deps
