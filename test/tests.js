@@ -14,6 +14,46 @@ module.exports = function (getDescriptors, t) {
 		writable: true
 	};
 
+	t.test('works with Object.prototype poisoned setter', { skip: !Object.defineProperty }, function (st) {
+		var key = 'foo';
+
+		var obj = {};
+		obj[key] = 42;
+
+		var expected = {};
+		expected[key] = {
+			configurable: true,
+			enumerable: true,
+			value: 42,
+			writable: true
+		};
+
+		/* eslint-disable no-extend-native, accessor-pairs */
+		Object.defineProperty(Object.prototype, key, { configurable: true, set: function (v) { throw new Error(v); } });
+		/* eslint-enable no-extend-native, accessor-pairs */
+
+		var hasOwnNamesBug = false;
+		try {
+			Object.getOwnPropertyNames(obj);
+		} catch (e) {
+			// v8 in node 0.6 - 0.12 has a bug :-(
+			hasOwnNamesBug = true;
+			st.comment('SKIP: this engine has a bug with Object.getOwnPropertyNames: it can not handle a throwing setter on Object.prototype.');
+		}
+
+		if (!hasOwnNamesBug) {
+			st.doesNotThrow(function () {
+				var result = getDescriptors(obj);
+				st.deepEqual(result, expected, 'got expected descriptors');
+			});
+		}
+
+		/* eslint-disable no-extend-native */
+		delete Object.prototype[key];
+		/* eslint-enable no-extend-native */
+		st.end();
+	});
+
 	t.test('gets all expected non-Symbol descriptors', function (st) {
 		var obj = { normal: Infinity };
 		Object.defineProperty(obj, 'enumerable', enumDescriptor);

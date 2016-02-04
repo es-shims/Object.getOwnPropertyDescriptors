@@ -2,6 +2,7 @@
 
 var ES = require('es-abstract/es7');
 
+var defineProperty = Object.defineProperty;
 var getDescriptor = Object.getOwnPropertyDescriptor;
 var getOwnNames = Object.getOwnPropertyNames;
 var getSymbols = Object.getOwnPropertySymbols;
@@ -13,13 +14,26 @@ var getAll = getSymbols ? function (obj) {
 
 var isES5 = ES.IsCallable(getDescriptor) && ES.IsCallable(getOwnNames);
 
+var safePut = function put(obj, prop, val) {
+	if (defineProperty && prop in obj) {
+		defineProperty(obj, prop, {
+			configurable: true,
+			enumerable: true,
+			value: val,
+			writable: true
+		});
+	} else {
+		obj[prop] = val;
+	}
+};
+
 module.exports = function getOwnPropertyDescriptors(value) {
 	ES.RequireObjectCoercible(value);
 	if (!isES5) { throw new TypeError('getOwnPropertyDescriptors requires Object.getOwnPropertyDescriptor'); }
 
 	var O = ES.ToObject(value);
 	return reduce(getAll(O), function (acc, key) {
-		acc[key] = getDescriptor(O, key);
+		safePut(acc, key, getDescriptor(O, key));
 		return acc;
 	}, {});
 };
