@@ -1,0 +1,6 @@
+{
+	"rules": {
+		"max-nested-callbacks": [2, 3],
+		"max-statements": [2, 15]
+	}
+}

@@ -14,7 +14,7 @@ var getAll = getSymbols ? function (obj) {
 
 var isES5 = ES.IsCallable(getDescriptor) && ES.IsCallable(getOwnNames);
 
-var safePut = function put(obj, prop, val) {
+var safePut = function put(obj, prop, val) { // eslint-disable-line max-params
 	if (defineProperty && prop in obj) {
 		defineProperty(obj, prop, {
 			configurable: true,
