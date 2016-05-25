@@ -10,10 +10,10 @@
 
 [![browser support][testling-svg]][testling-url]
 
-An ECMAScript spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.
+An ES2017 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.
 Invoke its "shim" method to shim `Object.getOwnPropertyDescriptors` if it is unavailable, and if `Object.getOwnPropertyDescriptor` is available.
 
-This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the [spec](https://github.com/tc39/proposal-object-getownpropertydescriptors).
+This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the [spec](https://github.com/tc39/ecma262/pull/582).
 
 ## Example
 
