@@ -5,6 +5,7 @@ getDescriptors.shim();
 
 var test = require('tape');
 var defineProperties = require('define-properties');
+var runTests = require('./tests');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var functionsHaveNames = function f() {}.name === 'f';
 
@@ -28,7 +29,7 @@ test('shimmed', function (t) {
 		st.end();
 	});
 
-	require('./tests')(Object.getOwnPropertyDescriptors, t);
+	runTests(Object.getOwnPropertyDescriptors, t);
 
 	t.end();
 });

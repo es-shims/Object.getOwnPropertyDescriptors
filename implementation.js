@@ -29,7 +29,9 @@ var safePut = function put(obj, prop, val) { // eslint-disable-line max-params
 
 module.exports = function getOwnPropertyDescriptors(value) {
 	ES.RequireObjectCoercible(value);
-	if (!isES5) { throw new TypeError('getOwnPropertyDescriptors requires Object.getOwnPropertyDescriptor'); }
+	if (!isES5) {
+		throw new TypeError('getOwnPropertyDescriptors requires Object.getOwnPropertyDescriptor');
+	}
 
 	var O = ES.ToObject(value);
 	return reduce(getAll(O), function (acc, key) {

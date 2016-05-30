@@ -2,6 +2,7 @@
 
 var getDescriptors = require('../');
 var test = require('tape');
+var runTests = require('./tests');
 
 test('as a function', function (t) {
 	t.test('bad object/this value', function (st) {
@@ -10,7 +11,7 @@ test('as a function', function (t) {
 		st.end();
 	});
 
-	require('./tests')(getDescriptors, t);
+	runTests(getDescriptors, t);
 
 	t.end();
 });
