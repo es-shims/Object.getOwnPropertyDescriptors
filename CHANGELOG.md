@@ -1,3 +1,13 @@
+2.0.3 / 2016-07-26
+=================
+  * [Fix] Update implementation to not return `undefined` descriptors
+  * [Deps] update `es-abstract`
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `jscs`, `nsp`, `tape`, `semver`
+  * [Dev Deps] remove unused eccheck script + dep
+  * [Tests] up to `node` `v6.3`, `v5.12`, `v4.4`
+  * [Tests] use pretest/posttest for linting/security
+  * Update to stage 4
+
 2.0.2 / 2016-01-27
 =================
   * [Fix] ensure that `Object.getOwnPropertyDescriptors` does not fail when `Object.prototype` has a poisoned setter (#1, #2)
