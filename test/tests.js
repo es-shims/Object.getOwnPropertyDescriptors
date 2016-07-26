@@ -103,4 +103,25 @@ module.exports = function (getDescriptors, t) {
 		});
 		st.end();
 	});
+
+	/* global Proxy */
+	var supportsProxy = typeof Proxy === 'function';
+	t.test('Proxies that return an undefined descriptor', { skip: !supportsProxy }, function (st) {
+		var obj = { foo: true };
+		var fooDescriptor = Object.getOwnPropertyDescriptor(obj, 'foo');
+
+		var proxy = new Proxy(obj, {
+			getOwnPropertyDescriptor: function (target, key) {
+				return Object.getOwnPropertyDescriptor(target, key);
+			},
+			ownKeys: function () {
+				return [
+					'foo',
+					'bar'
+				];
+			}
+		});
+		st.deepEqual(getDescriptors(proxy), { foo: fooDescriptor }, 'object has no descriptors');
+		st.end();
+	});
 };

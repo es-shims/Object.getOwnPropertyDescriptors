@@ -35,7 +35,10 @@ module.exports = function getOwnPropertyDescriptors(value) {
 
 	var O = ES.ToObject(value);
 	return reduce(getAll(O), function (acc, key) {
-		safePut(acc, key, getDescriptor(O, key));
+		var descriptor = getDescriptor(O, key);
+		if (typeof descriptor !== 'undefined') {
+			safePut(acc, key, descriptor);
+		}
 		return acc;
 	}, {});
 };
