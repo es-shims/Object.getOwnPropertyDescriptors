@@ -74,9 +74,9 @@ module.exports = function (getDescriptors, t) {
 		st.end();
 	});
 
-	var supportsSymbols = typeof Symbol === 'function' && typeof Symbol() === 'symbol';
+	var supportsSymbols = typeof Symbol === 'function' && typeof Symbol('foo') === 'symbol';
 	t.test('gets Symbol descriptors too', { skip: !supportsSymbols }, function (st) {
-		var symbol = Symbol();
+		var symbol = Symbol('sym');
 		var symDescriptor = {
 			configurable: false,
 			enumerable: true,
