@@ -115,10 +115,7 @@ module.exports = function (getDescriptors, t) {
 				return Object.getOwnPropertyDescriptor(target, key);
 			},
 			ownKeys: function () {
-				return [
-					'foo',
-					'bar'
-				];
+				return ['foo', 'bar'];
 			}
 		});
 		st.deepEqual(getDescriptors(proxy), { foo: fooDescriptor }, 'object has no descriptors');
