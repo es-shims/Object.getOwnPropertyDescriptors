@@ -1,4 +1,4 @@
-#object.getownpropertydescriptors <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+# Object.getOwnPropertyDescriptors <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
 [![Build Status][travis-svg]][travis-url]
 [![dependency status][deps-svg]][deps-url]
@@ -7,8 +7,6 @@
 [![Downloads][downloads-image]][downloads-url]
 
 [![npm badge][npm-badge-png]][package-url]
-
-[![browser support][testling-svg]][testling-url]
 
 An ES2017 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.
 Invoke its "shim" method to shim `Object.getOwnPropertyDescriptors` if it is unavailable, and if `Object.getOwnPropertyDescriptor` is available.
@@ -84,8 +82,8 @@ Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.org/package/object.getownpropertydescriptors
 [npm-version-svg]: http://versionbadg.es/ljharb/object.getownpropertydescriptors.svg
-[travis-svg]: https://travis-ci.org/ljharb/object.getownpropertydescriptors.svg
-[travis-url]: https://travis-ci.org/ljharb/object.getownpropertydescriptors
+[travis-svg]: https://travis-ci.org/ljharb/Object.getOwnPropertyDescriptors.svg
+[travis-url]: https://travis-ci.org/ljharb/Object.getOwnPropertyDescriptors
 [deps-svg]: https://david-dm.org/ljharb/object.getownpropertydescriptors.svg
 [deps-url]: https://david-dm.org/ljharb/object.getownpropertydescriptors
 [dev-deps-svg]: https://david-dm.org/ljharb/object.getownpropertydescriptors/dev-status.svg
