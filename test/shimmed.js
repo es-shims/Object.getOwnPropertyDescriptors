@@ -7,7 +7,7 @@ var test = require('tape');
 var defineProperties = require('define-properties');
 var runTests = require('./tests');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
-var functionsHaveNames = function f() {}.name === 'f';
+var functionsHaveNames = require('functions-have-names')();
 
 test('shimmed', function (t) {
 	t.equal(Object.getOwnPropertyDescriptors.length, 1, 'Object.getOwnPropertyDescriptors has a length of 1');
