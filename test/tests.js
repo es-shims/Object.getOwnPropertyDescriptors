@@ -48,9 +48,7 @@ module.exports = function (getDescriptors, t) {
 			});
 		}
 
-		/* eslint-disable no-extend-native */
 		delete Object.prototype[key];
-		/* eslint-enable no-extend-native */
 		st.end();
 	});
 
