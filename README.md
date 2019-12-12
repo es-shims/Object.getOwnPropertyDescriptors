@@ -81,15 +81,13 @@ assert.deepEqual(shimmedDescriptors(obj), getDescriptors(obj));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.org/package/object.getownpropertydescriptors
-[npm-version-svg]: http://versionbadg.es/ljharb/object.getownpropertydescriptors.svg
-[travis-svg]: https://travis-ci.org/ljharb/Object.getOwnPropertyDescriptors.svg
-[travis-url]: https://travis-ci.org/ljharb/Object.getOwnPropertyDescriptors
-[deps-svg]: https://david-dm.org/ljharb/object.getownpropertydescriptors.svg
-[deps-url]: https://david-dm.org/ljharb/object.getownpropertydescriptors
-[dev-deps-svg]: https://david-dm.org/ljharb/object.getownpropertydescriptors/dev-status.svg
-[dev-deps-url]: https://david-dm.org/ljharb/object.getownpropertydescriptors#info=devDependencies
-[testling-svg]: https://ci.testling.com/ljharb/object.getownpropertydescriptors.png
-[testling-url]: https://ci.testling.com/ljharb/object.getownpropertydescriptors
+[npm-version-svg]: http://versionbadg.es/es-shims/object.getownpropertydescriptors.svg
+[travis-svg]: https://travis-ci.org/es-shims/Object.getOwnPropertyDescriptors.svg
+[travis-url]: https://travis-ci.org/es-shims/Object.getOwnPropertyDescriptors
+[deps-svg]: https://david-dm.org/es-shims/object.getownpropertydescriptors.svg
+[deps-url]: https://david-dm.org/es-shims/object.getownpropertydescriptors
+[dev-deps-svg]: https://david-dm.org/es-shims/object.getownpropertydescriptors/dev-status.svg
+[dev-deps-url]: https://david-dm.org/es-shims/object.getownpropertydescriptors#info=devDependencies
 [npm-badge-png]: https://nodei.co/npm/object.getownpropertydescriptors.png?downloads=true&stars=true
 [license-image]: http://img.shields.io/npm/l/object.getownpropertydescriptors.svg
 [license-url]: LICENSE

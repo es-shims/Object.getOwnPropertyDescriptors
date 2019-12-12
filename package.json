@@ -22,7 +22,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ljharb/object.getownpropertydescriptors.git"
+		"url": "git://github.com/es-shims/object.getownpropertydescriptors.git"
 	},
 	"keywords": [
 		"Object.getOwnPropertyDescriptors",
