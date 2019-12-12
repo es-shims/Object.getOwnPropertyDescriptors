@@ -1,7 +1,10 @@
 {
 	"name": "object.getownpropertydescriptors",
 	"version": "2.0.3",
-	"author": "Jordan Harband",
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"description": "ES2017 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.",
 	"license": "MIT",
 	"main": "index.js",
