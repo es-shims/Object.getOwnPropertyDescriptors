@@ -23,7 +23,7 @@ var safePut = function put(obj, prop, val) { // eslint-disable-line max-params
 			writable: true
 		});
 	} else {
-		obj[prop] = val;
+		obj[prop] = val; // eslint-disable-line no-param-reassign
 	}
 };
 
