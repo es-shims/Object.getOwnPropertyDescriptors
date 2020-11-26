@@ -10,15 +10,14 @@
 	"main": "index.js",
 	"scripts": {
 		"prepublish": "safe-publish-latest",
-		"pretest": "npm run --silent lint && es-shim-api --bound",
+		"pretest": "npm run --silent lint",
 		"test": "npm run --silent tests-only",
 		"posttest": "npx aud --production",
-		"tests-only": "npm run --silent test:shimmed && npm run --silent test:module",
-		"test:shimmed": "node test/shimmed",
-		"test:module": "node test",
+		"tests-only": "tape 'test/**/*.js'",
 		"coverage": "covert test/*.js",
 		"coverage:quiet": "covert test/*.js --quiet",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"postlint": "es-shim-api --bound"
 	},
 	"repository": {
 		"type": "git",
@@ -46,6 +45,7 @@
 		"covert": "^1.1.1",
 		"eslint": "^7.8.1",
 		"functions-have-names": "^1.2.1",
+		"has-strict-mode": "^1.0.0",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.1"
 	},
