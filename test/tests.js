@@ -102,7 +102,6 @@ module.exports = function (getDescriptors, t) {
 		st.end();
 	});
 
-	/* global Proxy */
 	var supportsProxy = typeof Proxy === 'function';
 	t.test('Proxies that return an undefined descriptor', { skip: !supportsProxy }, function (st) {
 		var obj = { foo: true };
