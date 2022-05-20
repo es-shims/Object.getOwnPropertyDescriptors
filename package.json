@@ -35,6 +35,7 @@
 		"es-shim API"
 	],
 	"dependencies": {
+		"array.prototype.reduce": "^1.0.4",
 		"call-bind": "^1.0.2",
 		"define-properties": "^1.1.4",
 		"es-abstract": "^1.20.1"
