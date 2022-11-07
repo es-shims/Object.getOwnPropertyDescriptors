@@ -17,7 +17,9 @@
 		"posttest": "aud --production",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"lint": "eslint --ext=js,mjs .",
-		"postlint": "es-shim-api --bound"
+		"postlint": "es-shim-api --bound",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -78,6 +80,15 @@
 	},
 	"engines": {
 		"node": ">= 0.8"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false,
+		"hideCredit": true,
+		"startingVersion": "2.1.6"
 	},
 	"publishConfig": {
 		"ignore": [
