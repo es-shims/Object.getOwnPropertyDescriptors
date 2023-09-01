@@ -37,10 +37,10 @@
 		"es-shim API"
 	],
 	"dependencies": {
-		"array.prototype.reduce": "^1.0.5",
+		"array.prototype.reduce": "^1.0.6",
 		"call-bind": "^1.0.2",
 		"define-properties": "^1.2.0",
-		"es-abstract": "^1.21.2",
+		"es-abstract": "^1.22.1",
 		"safe-array-concat": "^1.0.0"
 	},
 	"devDependencies": {
