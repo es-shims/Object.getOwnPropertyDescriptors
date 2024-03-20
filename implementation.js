@@ -2,14 +2,15 @@
 
 var CreateDataProperty = require('es-abstract/2023/CreateDataProperty');
 var IsCallable = require('es-abstract/2023/IsCallable');
-var RequireObjectCoercible = require('es-abstract/2023/RequireObjectCoercible');
-var ToObject = require('es-abstract/2023/ToObject');
+var RequireObjectCoercible = require('es-object-atoms/RequireObjectCoercible');
+var ToObject = require('es-object-atoms/ToObject');
 var safeConcat = require('safe-array-concat');
 var reduce = require('array.prototype.reduce');
+var $Object = require('es-object-atoms');
 
-var $gOPD = Object.getOwnPropertyDescriptor;
-var $getOwnNames = Object.getOwnPropertyNames;
-var $getSymbols = Object.getOwnPropertySymbols;
+var $gOPD = $Object.getOwnPropertyDescriptor;
+var $getOwnNames = $Object.getOwnPropertyNames;
+var $getSymbols = $Object.getOwnPropertySymbols;
 
 var getAll = $getSymbols ? function (obj) {
 	return safeConcat($getOwnNames(obj), $getSymbols(obj));
