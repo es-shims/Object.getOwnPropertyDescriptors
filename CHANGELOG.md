@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.1.8](https://github.com/ljharb/Object.getOwnPropertyDescriptors/compare/v2.1.7...v2.1.8) - 2024-03-19
+
+### Commits
+
+- [actions] remove redundant finisher [`72e367f`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/72e367f708417284e465acb722ccaa0cff615a32)
+- [Refactor] use `es-object-atoms` where possible [`a403fd2`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/a403fd2d4651586309b3a31a31010ca74fa5aa47)
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `safe-array-concat` [`fe4f40d`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/fe4f40d06ad1b877b1dd5aecb2e61c6d1c155c21)
+- [Refactor] use `gopd` [`a2d1344`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/a2d1344271aa98bd9aa5771ea8847605628bcf6e)
+- [Dev Deps] update `aud`, `mock-property`, `npmignore`, `tape` [`1852646`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/18526463da3df02dbc688e6897ab262245f85d99)
+
 ## [v2.1.7](https://github.com/ljharb/Object.getOwnPropertyDescriptors/compare/v2.1.6...v2.1.7) - 2023-08-31
 
 ### Commits
