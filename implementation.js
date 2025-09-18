@@ -1,6 +1,6 @@
 'use strict';
 
-var CreateDataProperty = require('es-abstract/2024/CreateDataProperty');
+var CreateDataProperty = require('es-abstract/2025/CreateDataProperty');
 var RequireObjectCoercible = require('es-object-atoms/RequireObjectCoercible');
 var ToObject = require('es-object-atoms/ToObject');
 var safeConcat = require('safe-array-concat');
