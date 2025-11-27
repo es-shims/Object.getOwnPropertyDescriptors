@@ -55,7 +55,7 @@
 		"has-strict-mode": "^1.1.0",
 		"in-publish": "^2.0.1",
 		"mock-property": "^1.1.0",
-		"npmignore": "^0.3.1",
+		"npmignore": "^0.3.2",
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^2.0.0",
 		"tape": "^5.9.0"
