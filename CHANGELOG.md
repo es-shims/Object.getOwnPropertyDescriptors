@@ -5,30 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.8](https://github.com/ljharb/Object.getOwnPropertyDescriptors/compare/v2.1.7...v2.1.8) - 2024-03-19
+## [v2.1.9](https://github.com/es-shims/Object.getOwnPropertyDescriptors/compare/v2.1.8...v2.1.9) - 2025-12-10
 
 ### Commits
 
-- [actions] remove redundant finisher [`72e367f`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/72e367f708417284e465acb722ccaa0cff615a32)
-- [Refactor] use `es-object-atoms` where possible [`a403fd2`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/a403fd2d4651586309b3a31a31010ca74fa5aa47)
-- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `safe-array-concat` [`fe4f40d`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/fe4f40d06ad1b877b1dd5aecb2e61c6d1c155c21)
-- [Refactor] use `gopd` [`a2d1344`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/a2d1344271aa98bd9aa5771ea8847605628bcf6e)
-- [Dev Deps] update `aud`, `mock-property`, `npmignore`, `tape` [`1852646`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/18526463da3df02dbc688e6897ab262245f85d99)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config` [`b3d48d5`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/b3d48d52ce2f8e688118e3d937dc831c894bea78)
+- [Deps] update `array.prototype.reduce`, `call-bind`, `es-abstract`, `es-object-atoms`, `gopd`, `safe-array-concat` [`224f5c8`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/224f5c815ba7588249825740f4bf82c32eda9814)
+- [Dev Deps] update `@es-shims/api`, `auto-changelog`, `has-strict-mode`, `mock-property`, `tape` [`eee065a`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/eee065aa1afd21c3b1919d1aa9527ca2b98fbaea)
+- [meta] use `npm audit` instead of `aud` [`ff601b5`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/ff601b5885613d922635ab2e9688683ea005a7a7)
+- [Dev Deps] update `npmignore` [`6612fe4`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/6612fe4584a9f26d9c6e6954b6286d119df502dd)
+- [Dev Deps] update `@ljharb/eslint-config` [`4ed1ca5`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/4ed1ca55e818b97b687c30409ea3e11e7c1d47ad)
+- [meta] drop engines.node down to 0.4 [`ab5347d`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/ab5347d1972a6021ef6704c5c49e842024087581)
+- [Dev Deps] add missing peer dep [`603107a`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/603107af4bea789d750c436f0ee9d84be1569f74)
 
-## [v2.1.7](https://github.com/ljharb/Object.getOwnPropertyDescriptors/compare/v2.1.6...v2.1.7) - 2023-08-31
-
-### Commits
-
-- [Deps] update `array.prototype.reduce`, `es-abstract` [`a201ad2`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/a201ad21768bbd199c122fc8b51ded6667b07573)
-- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`f174ab1`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/f174ab14b2a816abac871d10747b1fcff179f0d8)
-
-## [v2.1.6](https://github.com/ljharb/Object.getOwnPropertyDescriptors/compare/v2.1.5...v2.1.6) - 2023-04-20
+## [v2.1.8](https://github.com/es-shims/Object.getOwnPropertyDescriptors/compare/v2.1.7...v2.1.8) - 2024-03-19
 
 ### Commits
 
-- [Refactor] use `safe-array-concat` [`a717eb2`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/a717eb21bacdc01eaa17092fe93dd21e0c1ef320)
-- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`b08d70f`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/b08d70f9387aad6341d44d9216ffa36023973a66)
-- [Deps] update `define-properties`, `es-abstract` [`95c8479`](https://github.com/ljharb/Object.getOwnPropertyDescriptors/commit/95c84794c2a78bc78c8c5f540db150c30fe9aea2)
+- [actions] remove redundant finisher [`72e367f`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/72e367f708417284e465acb722ccaa0cff615a32)
+- [Refactor] use `es-object-atoms` where possible [`a403fd2`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/a403fd2d4651586309b3a31a31010ca74fa5aa47)
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `safe-array-concat` [`fe4f40d`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/fe4f40d06ad1b877b1dd5aecb2e61c6d1c155c21)
+- [Refactor] use `gopd` [`a2d1344`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/a2d1344271aa98bd9aa5771ea8847605628bcf6e)
+- [Dev Deps] update `aud`, `mock-property`, `npmignore`, `tape` [`1852646`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/18526463da3df02dbc688e6897ab262245f85d99)
+
+## [v2.1.7](https://github.com/es-shims/Object.getOwnPropertyDescriptors/compare/v2.1.6...v2.1.7) - 2023-08-31
+
+### Commits
+
+- [Deps] update `array.prototype.reduce`, `es-abstract` [`a201ad2`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/a201ad21768bbd199c122fc8b51ded6667b07573)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`f174ab1`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/f174ab14b2a816abac871d10747b1fcff179f0d8)
+
+## [v2.1.6](https://github.com/es-shims/Object.getOwnPropertyDescriptors/compare/v2.1.5...v2.1.6) - 2023-04-20
+
+### Commits
+
+- [Refactor] use `safe-array-concat` [`a717eb2`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/a717eb21bacdc01eaa17092fe93dd21e0c1ef320)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`b08d70f`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/b08d70f9387aad6341d44d9216ffa36023973a66)
+- [Deps] update `define-properties`, `es-abstract` [`95c8479`](https://github.com/es-shims/Object.getOwnPropertyDescriptors/commit/95c84794c2a78bc78c8c5f540db150c30fe9aea2)
 
 <!-- auto-changelog-above -->
 

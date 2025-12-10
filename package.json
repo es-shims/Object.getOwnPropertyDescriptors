@@ -1,6 +1,6 @@
 {
 	"name": "object.getownpropertydescriptors",
-	"version": "2.1.8",
+	"version": "2.1.9",
 	"author": "Jordan Harband <ljharb@gmail.com>",
 	"funding": {
 		"url": "https://github.com/sponsors/ljharb"
