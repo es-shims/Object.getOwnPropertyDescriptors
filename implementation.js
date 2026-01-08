@@ -7,6 +7,7 @@ var safeConcat = require('safe-array-concat');
 var reduce = require('array.prototype.reduce');
 var gOPD = require('gopd');
 var $Object = require('es-object-atoms');
+var $TypeError = require('es-errors/type');
 
 var $getOwnNames = $Object.getOwnPropertyNames;
 var $getSymbols = $Object.getOwnPropertySymbols;
@@ -20,7 +21,7 @@ var isES5 = gOPD && typeof $getOwnNames === 'function';
 module.exports = function getOwnPropertyDescriptors(value) {
 	RequireObjectCoercible(value);
 	if (!isES5) {
-		throw new TypeError('getOwnPropertyDescriptors requires Object.getOwnPropertyDescriptor');
+		throw new $TypeError('getOwnPropertyDescriptors requires Object.getOwnPropertyDescriptor');
 	}
 
 	var O = ToObject(value);
